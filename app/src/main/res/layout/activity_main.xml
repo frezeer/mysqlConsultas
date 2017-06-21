@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_orange_light"
+    tools:context="ventas.sergio.morales.com.mysqlconsultas.MainActivity">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Empleados"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="id"
+            android:layout_margin="10dp"
+            android:id="@+id/etId"
+            android:layout_below="@+id/tvTitulo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etId"
+            android:layout_margin="10dp"
+            android:hint="nombres"
+            android:id="@+id/etNombres"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="telefono"
+            android:id="@+id/etTelefono"
+            android:layout_below="@+id/etNombres"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etTelefono"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/save"
+            android:src="@drawable/save"
+            android:text="Guardar"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#0cf177" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnGuardar"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/finger"
+            android:src="@drawable/finger"
+            android:text="Consultar"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#0cf177" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnConsultar"
+        android:drawableRight="@drawable/clear"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#930b96"
+        android:src="@drawable/clear"
+        android:text="Limpiar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/delete"
+        android:drawableRight="@drawable/delete"
+        android:text="Borrar ->>>>>"
+        android:id="@+id/btnBorrar"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#f1140c"
+        android:layout_below="@+id/btnLimpiar"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnBorrar"
+        android:drawableRight="@drawable/next"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#f10ca1"
+        android:src="@drawable/next"
+        android:text="Siguiente" />
+
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/close"
+        android:drawableRight="@drawable/close"
+        android:layout_below="@+id/Siguiente"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#f10ca1"
+        android:text="Cerrar Ventana" />
+
+    </RelativeLayout>
